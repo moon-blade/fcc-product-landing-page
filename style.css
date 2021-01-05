@@ -56,6 +56,7 @@ body {
   text-decoration: none;
   color: black;
   margin: 0 30px;
+  padding: 0 5px 0 5px;
 }
 /* main */
 main {
@@ -133,6 +134,7 @@ main {
   margin: 40px auto;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 /* pricing */
 #pricing-section {
@@ -218,16 +220,38 @@ main {
     align-items: center;
   }
 }
-@media screen and (max-width: 625px) {
+@media screen and (max-width: 660px) {
   #header {
     display: flex;
     flex-direction: column;
     text-align: center;
+  }
+  #footer {
+    width: 80%;
   }
   #footer ul {
     justify-content: center;
   }
   #footer p {
     text-align: center;
+  }
+  #video-div {
+    /* width: 70%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #video {
+    width: 90vw;
+  }
+}
+@media screen and (max-width: 430px) {
+  #header {
+    height: 100px;
+    flex-direction: row;
+  }
+  #nav-bar ul {
+    justify-content: center;
+    flex-direction: column;
   }
 }
